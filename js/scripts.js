@@ -10,8 +10,8 @@ const productos = [
     nombre: "Monito crudo",
     precio: "$5.000",
     marca: "Zara",
-    talle: "Talle: L",
-    condicion: "Condición: Nuevo",
+    talle: "L",
+    condicion: "Nuevo",
   },
   {
     idProduct: "prod2",
@@ -20,8 +20,8 @@ const productos = [
     nombre: "Pantalon verde con puño",
     precio: "$4.000",
     marca: "Zara",
-    talle: "Talle: L",
-    condicion: "Condición: Nuevo",
+    talle: "L",
+    condicion: "Nuevo",
   },
   {
     idProduct: "prod3",
@@ -30,8 +30,8 @@ const productos = [
     nombre: "Pantalon jean azul",
     precio: "$6.000",
     marca: "Jazmin Chebar",
-    talle: "Talle: L",
-    condicion: "Condición: Nuevo",
+    talle: "L",
+    condicion: "Nuevo",
   },
 ];
 
@@ -75,18 +75,19 @@ function renderizarGaleria(prods) {
                     <div class="card-body p-4">
                     <div class="text-center">
                         <!-- Product name-->
-                        <h5 class="fw-bolder">${producto.nombre}</h5>
-                        <p>${producto.marca}</p>
-                        <p>${producto.talle}</p>
-                        <p>${producto.condicion}</p>
+                        <h6 style="margin-bottom:0px;">${producto.nombre}</h6>
+                        <p class="fw-bolder" style="margin-bottom:9px;">${producto.precio}</p>
+                        <h6 style="font-style:italic; margin-bottom:0px;">Marca: ${producto.marca}</h6>
+                        <h6 style="font-style:italic; margin-bottom:0px;">Condición: ${producto.condicion}</h6>
+                        <h6 style="font-style:italic; margin-bottom:0px;">Talle: ${producto.talle}</h6>
                         <!-- Product price-->
-                        <p>${producto.precio}</p>
+                        
                     </div>
                 </div>
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                         <div class="text-center">
-                            <a class="btn btn-outline-dark mt-auto" href="https://mail.google.com/mail/?view=cm&fs=1&to=lasaudet@gmail.com&su=Solicito ${producto.nombre}&body=Hola!! Estoy interesada en comprar el producto ${producto.nombre}, código: ${producto.idProduct}.                            "
+                            <a class="btn btn-outline-dark mt-auto" style="font-size:0.9rem" href="https://mail.google.com/mail/?view=cm&fs=1&to=las.audet@gmail.com&su=Solicito ${producto.nombre}&body=Hola!! Estoy interesada en comprar el producto ${producto.nombre}, código: ${producto.idProduct}."
                             >Solicitar producto</a
                             >
                         </div>
