@@ -87,7 +87,7 @@ function renderizarGaleria(prods) {
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                         <div class="text-center">
-                            <a class="btn btn-outline-dark mt-auto" style="font-size:0.9rem" href="https://mail.google.com/mail/?view=cm&fs=1&to=las.audet@gmail.com&su=Solicito ${producto.nombre}&body=Hola!! Estoy interesada en comprar el producto ${producto.nombre}, código: ${producto.idProduct}."
+                            <a class="btn btn-outline-dark mt-auto" style="font-size:0.9rem" href="mailto:las.audet@gmail.com?subject=Solicito ${producto.nombre}&body=Hola!! Estoy interesada en comprar el producto ${producto.nombre}, código: ${producto.idProduct}."
                             >Solicitar producto</a
                             >
                         </div>
